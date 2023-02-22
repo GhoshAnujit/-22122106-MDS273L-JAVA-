@@ -1,0 +1,1 @@
+This lab contains a program, the aim of which is to provide the model of a bank, in which, the details of a customer will be taken including both financial and personal, after which he will be provided the options to Deposit money, Withdraw money, Print transactions and print his account summary. 

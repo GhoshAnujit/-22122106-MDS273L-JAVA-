@@ -1,0 +1,85 @@
+import java.util.*;
+import java.sql.Timestamp;
+class Finance{
+	static int account_number;
+	static String account_holder_name;
+	static int account_balance;
+
+	public static void main(String arg[]){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to Java Finance");
+		System.out.println("Enter your account number:");
+		account_number = Integer.parseInt(sc.nextLine());
+		System.out.println("Enter the account Holder name:");
+		account_holder_name = sc.nextLine();
+		System.out.println("Enter the current balance in your account:");		
+		account_balance = sc.nextInt();
+				
+		System.out.println("Enter your choice: %n 1.Deposit %n 2.Withdraw %n 3.Transactions %n 4.Summary");	
+		int val = sc.nextInt();
+
+	switch (val){
+		case 1:
+			Deposit(account_balance,time);
+			break;
+		case 2:
+			Withdraw(account_balance,time);
+			break;
+		case 3:
+			Transactions();
+			break;
+		case 4:
+			summary(account_number,account_Holder_name,account_balance);
+			break;
+		default:
+			System.out.println("Invalid Input");
+			break;
+	}
+
+	}
+	public static String timestampp(){
+	
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		String time = timestamp.toString();
+		return time;
+	}
+	public static void customer(){
+		System.out.println("Enter your name:");
+		customer_name = sc.nextLine();
+		System.out.println("Enter your age:");
+		customer_age = Integer.parseInt(sc.nextLine());
+		System.out.println("Enter your gender:");
+		customer_gender = sc.next();
+		System.out.println("Enter your address:");
+		customer_address = sc.nextLine();
+		System.out.println("Enter your Nationality");
+		customer_nationality = sc.nextLine();
+		System.out.println("Enter you Credit Score:");
+		customer_credit_score = sc.nextInt();
+	}
+	public  static String[] Deposit(int account_balance,String time){
+		System.out.println("Enter Deposit amount:");
+		Deposit_amount = Integer.parseInt(sc.nextLine());
+		account_balance = account_balance + Deposit_amount;
+		System.out.println("Your current account balance is: " + account_balance);
+		String[] Deposits = {"Transaction time:"+time+"Amount Deposited: "+Deposit_amount+"Adjusted Balance: "+account_balance};
+		return Deposits;
+  		}
+	public static String[] Withdraw(int account_balance,String time){
+		System.out.println("Enter Withdraw amount: ");
+		Withdraw_amount = Integer.parseInt(sc.nextLine());
+		account_balance = account_balance - Withdraw_amount;
+		System.out.println("Your current account balance is: "+account_balance);
+		String[] Withdrawals = {"Transacion time: "+time+"Amount Withdrawn:"+Withdraw_amount+"Adjusted Balance:"+account_balance};
+		return Withdrawals;
+	}
+	public static void Transactions(String[] Deposits,String[] Withdrawals){
+		System.out.println(Deposits);
+		System.out.println(Withdrawals);
+	}
+	public static void summary(int account_number,String account_holder_name, int account_balance){
+		System.out.println("Name of the account holder: " + account_holder_name);
+		System.out.println("Account number: " + account_number);
+		System.out.println("Account balance:" + account_balance);
+	}
+}
