@@ -1,1 +1,2 @@
 This lab contains a program, the aim of which is to provide the model of a bank, in which, the details of a customer will be taken including both financial and personal, after which he will be provided the options to Deposit money, Withdraw money, Print transactions and print his account summary. 
+![lab4](https://user-images.githubusercontent.com/118505475/220628140-6c0a4cc1-8061-491e-aa52-204979140342.jpeg)
