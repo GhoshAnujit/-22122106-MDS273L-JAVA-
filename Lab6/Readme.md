@@ -7,4 +7,6 @@ In this program, we read a text file through java, and return multiple results t
 5. Top five repeated characters and their count 
 6. Least five repeated characters and their count 
 
-We are using the attached text file, and different functions to implement the six functions asked, we pass the file content to the functions ans return the values accordingly, use of global variables is restricted. 
+We are using the attached text file, and different functions to implement the six functions asked, we pass the file content to the functions ans return the values accordingly, use of global variables is restricted.
+
+![LAB-6](https://user-images.githubusercontent.com/118505475/230061475-708302bc-f6a1-4bf8-8229-c39b2b55656b.jpg)
